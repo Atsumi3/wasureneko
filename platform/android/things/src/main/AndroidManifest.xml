@@ -1,0 +1,27 @@
+<manifest
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        package="jp.bizen.wasureneko">
+    <application
+            android:allowBackup="false"
+            android:supportsRtl="true"
+            android:theme="@style/Theme.AppCompat.DayNight"
+            tools:ignore="GoogleAppIndexingWarning,MissingApplicationIcon">
+        <uses-library android:name="com.google.android.things"/>
+        <activity android:name=".HomeActivity">
+            <!-- Launch activity as default from Android Studio -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+            <!-- Launch activity automatically on boot, and re-launch if the app terminates. -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

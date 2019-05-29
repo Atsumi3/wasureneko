@@ -1,0 +1,11 @@
+apply plugin: 'com.android.application'
+
+apply from: rootProject.file('gradle/android-common.gradle')
+
+android {
+    defaultConfig.applicationId "jp.bizen.wasureneko"
+}
+
+dependencies {
+    implementation project(":platform:android:common")
+}

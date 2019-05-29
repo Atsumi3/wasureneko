@@ -1,0 +1,9 @@
+apply plugin: 'com.android.library'
+
+apply from: rootProject.file('gradle/android-common.gradle')
+
+android {
+    libraryVariants.all {
+        it.generateBuildConfig.enabled = false
+    }
+}

@@ -1,0 +1,11 @@
+rootProject.name = 'wasureneko'
+
+enableFeaturePreview('GRADLE_METADATA')
+
+include 'common'
+
+include 'platform:android'
+include 'platform:android:app'
+include 'platform:android:things'
+include 'platform:android:common'
+include 'platform:server'
